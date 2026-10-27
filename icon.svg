@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-label="Chatly">
+  <defs>
+    <linearGradient id="bg" x1="74" y1="30" x2="950" y2="1010" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0b8ee8"/>
+      <stop offset="0.35" stop-color="#2563eb"/>
+      <stop offset="0.68" stop-color="#4f46e5"/>
+      <stop offset="1" stop-color="#7c3aed"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="225" cy="135" r="560" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7debff" stop-opacity="0.42"/>
+      <stop offset="0.55" stop-color="#38bdf8" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#38bdf8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="875" cy="880" r="540" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f472b6" stop-opacity="0.34"/>
+      <stop offset="0.6" stop-color="#c026d3" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#c026d3" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="planet" x1="350" y1="300" x2="664" y2="690" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.55" stop-color="#f6fbff"/>
+      <stop offset="1" stop-color="#dbeafe"/>
+    </linearGradient>
+    <radialGradient id="sheen" cx="433" cy="355" r="235" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.92"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="orbit" x1="160" y1="0" x2="864" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e0f2fe" stop-opacity="0.18"/>
+      <stop offset="0.33" stop-color="#ffffff" stop-opacity="0.64"/>
+      <stop offset="0.72" stop-color="#ffffff" stop-opacity="0.44"/>
+      <stop offset="1" stop-color="#e0f2fe" stop-opacity="0.14"/>
+    </linearGradient>
+    <linearGradient id="dots" x1="0" y1="450" x2="0" y2="510" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#38bdf8"/>
+      <stop offset="0.55" stop-color="#2563eb"/>
+      <stop offset="1" stop-color="#4338ca"/>
+    </linearGradient>
+    <filter id="bubble-shadow" x="220" y="200" width="600" height="650" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="25" stdDeviation="27" flood-color="#030a23" flood-opacity="0.46"/>
+    </filter>
+    <filter id="moon-glow" x="770" y="310" width="130" height="130" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="15"/>
+    </filter>
+    <clipPath id="frame">
+      <rect width="1024" height="1024" rx="112"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="1024" height="1024" fill="url(#bg)"/>
+    <rect width="1024" height="1024" fill="url(#glowA)"/>
+    <rect width="1024" height="1024" fill="url(#glowB)"/>
+
+    <g transform="rotate(-22.35 512 518)">
+      <ellipse cx="512" cy="518" rx="395" ry="183" fill="none" stroke="#ffffff" stroke-opacity="0.12" stroke-width="5"/>
+    </g>
+
+    <g transform="rotate(-22.35 512 518)">
+      <ellipse cx="512" cy="518" rx="352" ry="154" fill="none" stroke="url(#orbit)" stroke-width="29"/>
+    </g>
+
+    <g filter="url(#bubble-shadow)">
+      <circle cx="512" cy="476" r="194" fill="url(#planet)"/>
+      <path d="M349 583 C334 661 311 712 294 739 Q289 748 300 744 C356 717 413 687 463 663 Z" fill="url(#planet)"/>
+    </g>
+
+    <circle cx="512" cy="476" r="191" fill="url(#sheen)"/>
+
+    <g fill="url(#dots)">
+      <circle cx="430" cy="480" r="28"/>
+      <circle cx="512" cy="480" r="28"/>
+      <circle cx="594" cy="480" r="28"/>
+    </g>
+
+    <circle cx="833" cy="372" r="35" fill="#ffffff" opacity="0.42" filter="url(#moon-glow)"/>
+    <circle cx="833" cy="372" r="31" fill="#ffffff"/>
+    <circle cx="825" cy="363" r="9" fill="#bfdbfe" opacity="0.92"/>
+
+    <g fill="#ffffff">
+      <circle cx="179" cy="269" r="7" opacity="0.7"/>
+      <circle cx="876" cy="223" r="5" opacity="0.6"/>
+      <circle cx="201" cy="746" r="4" opacity="0.45"/>
+      <circle cx="852" cy="770" r="7" opacity="0.5"/>
+      <circle cx="760" cy="126" r="4" opacity="0.5"/>
+      <circle cx="139" cy="519" r="3" opacity="0.4"/>
+    </g>
+
+    <rect x="3" y="3" width="1018" height="1018" rx="109" fill="none" stroke="#ffffff" stroke-opacity="0.14" stroke-width="6"/>
+  </g>
+</svg>
